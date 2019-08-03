@@ -42,9 +42,10 @@ for i in range(qtd):
         valores1 = np.asarray(valores)
         print("Valores1: \n", valores1)
         valorInicial = valorFinal
+        print("Novo Valor Inicial: \n", valorInicial)
 
     #taxaG = np.linspace(taxas, taxas, num=meses)
-    mesesG = np.linspace(0, meses, num=meses)
+    mesesG = np.linspace(0, meses, num=len(taxas1))
     print("Meses: \n", mesesG)
 
     #x1.append(taxaG)
