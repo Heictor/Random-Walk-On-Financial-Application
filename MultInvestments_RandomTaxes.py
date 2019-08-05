@@ -19,6 +19,7 @@ x1 = []
 y2 = []
 taxas = []
 valores = []
+meses1 = []
 
 fig = plt.figure()
 ax = fig.add_subplot(111, projection='3d')
@@ -27,7 +28,7 @@ for i in range(qtd):
     print("i: \n", i)
     for m in range(meses):
         print("m: \n", m)
-        taxa = random.uniform(0.01, 0.15)
+        taxa = random.uniform(-0.05, 0.05)
         print("Taxa: \n", taxa)
         taxas.append(taxa)
         print("Taxas: \n", taxas)
@@ -35,28 +36,40 @@ for i in range(qtd):
         print("Taxas1: \n", taxas1)
         print("Taxa[", m, "] = ", taxa)
 
-        valorFinal = valorInicial * ((1 + taxa) ** meses)
-        print("ValorFinal: \n", valorFinal)
+        valorFinal = valorInicial
         valores.append(valorFinal)
         print("Valores: \n", valores)
         valores1 = np.asarray(valores)
         print("Valores1: \n", valores1)
+        valorFinal = valorInicial * ((1 + taxa) ** 1)
+        print("ValorFinal: \n", valorFinal)
         valorInicial = valorFinal
         print("Novo Valor Inicial: \n", valorInicial)
 
-    #taxaG = np.linspace(taxas, taxas, num=meses)
-    mesesG = np.linspace(0, meses, num=len(taxas1))
-    print("Meses: \n", mesesG)
+        mes = m
+        meses1.append(mes)
+        meses11 = np.asarray(meses1)
+    print("Meses: \n", meses11)
 
-    #x1.append(taxaG)
-    #x11 = np.asarray(x1)
-    #devPad = x11.std()
-    #y2.append(mesesG)
-    #y22 = np.asarray(y2)
-    ax.plot(taxas1, mesesG, valores1)
+    ax.plot(taxas1, meses11, valores1)
+    plt.xlabel('Taxas')
+    plt.ylabel('Meses')
+    plt.title('Comportamento de uma aplicação financeira')
 plt.show()
-#print("x1", x1)
-#print("x11", x11)
-#print("y2", y2)
-#print("y22", y22)
-#print("Standard Deviation of sample is ", np.std()
+
+fig = plt.figure()
+plt.plot(taxas1, valores1)
+plt.grid()
+plt.xlabel('Taxas')
+plt.ylabel('Valor Futuro')
+plt.title('Comportamento de uma aplicação financeira')
+plt.show()
+
+fig = plt.figure()
+plt.plot(meses11, valores1)
+plt.grid()
+plt.xlabel('Meses')
+plt.ylabel('Valor Futuro')
+plt.title('Comportamento de uma aplicação financeira')
+plt.show()
+
