@@ -1,19 +1,15 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import random
-import statistics
 from mpl_toolkits.mplot3d import Axes3D
 
-"""Inserção de valores """
-qtd = int(input("Número de investimentos")) #qtd armazena a quantidade de possibilidades
-print("Quantidade de valores: \n", qtd)
+"""Inserção de Valores"""
 
-valorInicial = float(input("Insira o valor do investimento: "))#data1 armazena o valor do capital inicial
+valorInicial = float(input("Insira o valor da aplicação: "))
 print("Valor Inicial: \n", valorInicial)
 
-meses: int = int(input("Insira o valor de meses: "))# a armazena o valor de meses
+meses: int = int(input("Insira a quantidade de meses: "))
 print("Meses: \n", meses)
-
 
 x1 = []
 y2 = []
@@ -24,7 +20,7 @@ meses1 = []
 fig = plt.figure()
 ax = fig.add_subplot(111, projection='3d')
 
-for i in range(qtd):
+for i in range(1):
     print("i: \n", i)
     for m in range(meses):
         print("m: \n", m)
@@ -33,7 +29,6 @@ for i in range(qtd):
         taxas.append(taxa)
         print("Taxas: \n", taxas)
         taxas1 = np.asarray(taxas)
-        print("Taxas1: \n", taxas1)
         print("Taxa[", m, "] = ", taxa)
 
         valorFinal = valorInicial
@@ -50,7 +45,6 @@ for i in range(qtd):
         meses1.append(mes)
         meses11 = np.asarray(meses1)
     print("Meses: \n", meses11)
-
     ax.plot(taxas1, meses11, valores1)
     plt.xlabel('Taxas')
     plt.ylabel('Meses')
