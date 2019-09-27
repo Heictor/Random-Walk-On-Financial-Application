@@ -2,7 +2,7 @@
 This tool was built aiming to produce a close simulation to the cryptocurrency dinamic behavior.
 The first step is to analyse the mathematical equation, the compound interest formula:
 
-<img src="https://www.codecogs.com/eqnedit.php?latex=\fn_phv&space;\huge&space;FV&space;=&space;PV&space;\times&space;\left&space;{(1&plus;i\right&space;)^{n}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\fn_phv&space;\huge&space;FV&space;=&space;PV&space;\times&space;\left&space;{(1&plus;i\right&space;)^{n}}" title="\huge FV = PV \times \left {(1+i\right )^{n}}" /></a>.
+<a href="https://www.codecogs.com/eqnedit.php?latex=\fn_phv&space;\huge&space;FV&space;=&space;PV&space;\times&space;\left&space;{(1&plus;i\right&space;)^{n}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\fn_phv&space;\huge&space;FV&space;=&space;PV&space;\times&space;\left&space;{(1&plus;i\right&space;)^{n}}" title="\huge FV = PV \times \left {(1+i\right )^{n}}" /></a>.
 
 Here we have the Future Value (FV), the Present Value (PV), the Interest Rate (i), and the Number of Periods (n).
 When this equation is applied with constant values, the graphic result is shown on the the following image:
