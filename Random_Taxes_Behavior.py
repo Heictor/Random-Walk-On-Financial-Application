@@ -49,6 +49,7 @@ for i in range(1):
     plt.xlabel('Taxas')
     plt.ylabel('Meses')
     plt.title('Comportamento de uma aplicação financeira')
+fig.savefig('3D_i_n_FV.png')
 plt.show()
 
 fig = plt.figure()
@@ -57,6 +58,7 @@ plt.grid()
 plt.xlabel('Taxas')
 plt.ylabel('Valor Futuro')
 plt.title('Comportamento de uma aplicação financeira')
+fig.savefig('i_FV.png')
 plt.show()
 
 fig = plt.figure()
@@ -65,5 +67,6 @@ plt.grid()
 plt.xlabel('Meses')
 plt.ylabel('Valor Futuro')
 plt.title('Comportamento de uma aplicação financeira')
+fig.savefig('n_FV.png')
 plt.show()
 
