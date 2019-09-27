@@ -1,7 +1,8 @@
 ## Random-Walk-On-Financial-Application
 This tool was built aiming to produce a close simulation to the cryptocurrency dinamic behavior.
 The first step is to analyse the mathematical equation, the compound interest formula:
-![equation](http://www.sciweavers.org/tex2img.php?eq=FV%20%3D%20PV%20%20\times%20%20%20\big(1\big%20%2B%20i\big)^{\eta}%20&bc=White&fc=Black&im=png&fs=12&ff=mathdesign&edit=0).
+
+![alt text](http://www.sciweavers.org/tex2img.php?eq=FV%20%3D%20PV%20%20\times%20%20%20\big(1\big%20%2B%20i\big)^{\eta}%20&bc=White&fc=Black&im=png&fs=12&ff=mathdesign&edit=0).
 
 Here we have the Future Value (FV), the Present Value (PV), the Interest Rate (i), and the Number of Periods (n).
 When this equation is applied with constant values, the graphic result is shown on the the following image:
